@@ -16,7 +16,7 @@ if not api_key:
 
 # --- Gemini 初期化 ---
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("models/gemini-1.5-flash-001")
 
 SYSTEM_PROMPT = (
     "あなたは日本語のサポートボットです。方針:\n"
