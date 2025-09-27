@@ -1,0 +1,21 @@
+{
+  "created_at": "2025-09-27T16:51:10.343976Z",
+  "threshold_f1": 0.443451518248384,
+  "feature_names": [
+    "temparature1",
+    "humidity1",
+    "valtage1",
+    "usage1",
+    "rotation1",
+    "temparature2",
+    "humidity2",
+    "valtage2",
+    "usage2",
+    "rotation2",
+    "temparature3",
+    "humidity3",
+    "valtage3",
+    "usage3",
+    "rotation3"
+  ]
+}
