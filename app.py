@@ -36,7 +36,7 @@ for m in st.session_state.messages:
 
 if not st.session_state.messages:
     with st.chat_message("assistant"):
-        st.write("給湯器に関するお困りごとを教えてください。まずは **設定の見直し → 再起動** からご案内します。")
+        st.write("弊社の商品をご利用いただきありがとうございます。給湯器に関するお困りごとがあれば教えてください。AIスタッフがサポートいたします。")
 
 user_msg = st.chat_input("メッセージを入力…")
 if user_msg:
