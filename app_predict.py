@@ -204,9 +204,9 @@ if img_file is not None:
             if st.button("この値で故障判定する"):
                 try:
                     res = predictor.predict_one(edited)
-                    label = "⚠️ 故障の可能性あり (Yes)" if res["label"] == "Yes" else "✅ 故障の可能性は低い (No)"
+                    label = "⚠️ 故障の可能性があります。窓口までご連絡ください。作業員を手配いたします。" if res["label"] == "Yes" else "✅ 故障の可能性は低いです。再度設定をご確認ください。"
                     st.success(
-                        f"{label}\n\n確率: **{res['prob']:.3f}** / しきい値(F1最適): **{res['threshold']:.3f}**"
+                        f"{label}\n\n確率: **{res['prob']:.3f}**"
                     )
                     with st.expander("送信値（モデル入力の最終形）を確認"):
                         st.json(edited)
