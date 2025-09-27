@@ -8,11 +8,6 @@ st.caption("Gemini API で動くシンプルなサポートBot / 会社スタッ
 
 # --- API キーの取得（Streamlit Secrets または 環境変数 → 未設定なら入力欄） ---
 api_key = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY", ""))
-if not api_key:
-    with st.expander("初回設定: GEMINI_API_KEY を入力 (セッション内のみ保持)"):
-        api_key = st.text_input("GEMINI_API_KEY", type="password")
-if not api_key:
-    st.stop()
 
 # --- Gemini 初期化 ---
 genai.configure(api_key=api_key)
